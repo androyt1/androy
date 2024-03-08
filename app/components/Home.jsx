@@ -32,7 +32,7 @@ const Home = () => {
                     Download CV
                 </button> */}
             </div>
-            <div>
+            <div className='max-h-[50vh] md:max-h-full'>
                 <Canvas
                     className='  bg-black w-full h-full'
                     camera={{
