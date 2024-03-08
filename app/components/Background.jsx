@@ -24,7 +24,7 @@ const Background = () => {
                     anglePower={5} // Diffuse-cone anglePower (default: 5)
                 />
                 <directionalLight position={[0, 4, 0]} intensity={2} />
-                {/* <ambientLight intensity={3.5} /> */}
+                {/* <ambientLight intensity={5} /> */}
                 <OrbitControls />
                 {/* <Laptop position={[-0.15, -1, 0]} rotation-y={Math.PI * 0.4} /> */}
                 <FemaleDancer position-y={-2.3} />
