@@ -14,7 +14,7 @@ const page = () => {
                 <h1 className='text-4xl md:text-8xl text-orange-600 font-bold uppercase tracking-tighter text-wrap mt-2 md:mt-4 text-center md:text-left'>
                     andrew
                 </h1>
-                <h1 className='text-2xl md:text-6xl text-slate-300 font-bold uppercase tracking-tighter text-wrap text-center md:text-left'>
+                <h1 className='text-4xl md:text-6xl text-slate-300 font-bold uppercase tracking-tighter text-wrap text-center md:text-left'>
                     aghoghovwia
                 </h1>
                 {/* <button className='px-16 bg-transparent border-2 border-slate-300 text-slate-300 py-2 rounded-full font-semibold mt-8'>
@@ -45,14 +45,11 @@ const page = () => {
                 </Canvas>
             </div>
             <div className='bg-black md:col-span-2 flex flex-col justify-center items-start md:gap-y-3'>
-                <h3 className='text-4xl md:text-6xl text-orange-600 font-semibold uppercase tracking-tighter text-center md:text-left'>
+                <h3 className='text-3xl md:text-6xl text-orange-600 font-semibold uppercase tracking-tighter text-center md:text-left'>
                     Fullstack Developer
                 </h3>
-                <p className='text-sm md:text-xl text-slate-600 font-normal uppercase tracking-tighter text-wrap my-3 text-center md:text-left'>
+                <p className='text-sm md:text-xl text-slate-400 font-normal uppercase tracking-tighter text-wrap my-3  text-center md:text-left'>
                     Explore my portfolio and witness the convergence of imagination and skill.
-                    Whether you&apos;re seeking a visually stunning design, a seamless user
-                    experience, or a visionary collaboration, I&apos;m here to bring your digital
-                    dreams to life
                 </p>
             </div>
             <div
