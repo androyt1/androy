@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import FemaleDancer from "./models/FemaleDancer";
-import { SpotLight } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
 const Home = () => {
@@ -42,17 +41,6 @@ const Home = () => {
                         near: 0.1,
                         position: [-3, 1, 8],
                     }}>
-                    <SpotLight
-                        position-y={2}
-                        distance={10}
-                        angle={0.5}
-                        attenuation={5}
-                        anglePower={10} // Diffuse-cone anglePower (default: 5)
-                    />
-                    <directionalLight position={[0, 4, 0]} intensity={2} />
-                    {/* <ambientLight intensity={3.5} /> */}
-                    {/* <OrbitControls /> */}
-                    {/* <Laptop position={[-0.15, -1, 0]} rotation-y={Math.PI * 0.4} /> */}
                     <FemaleDancer position-y={-2.3} />
                 </Canvas>
             </div>
@@ -64,7 +52,8 @@ const Home = () => {
                     Explore my portfolio and witness the convergence of imagination and skill.
                 </p>
             </div>
-            <div
+            {/* left */}
+            {/* <div
                 className='fixed top-0 left-0 h-full w-[100px] bg-transparent '
                 style={{ writingMode: "vertical-lr" }}>
                 <button
@@ -88,10 +77,10 @@ const Home = () => {
                     onClick={() => handleScroll("skills")}>
                     Skills
                 </button>
-            </div>
+            </div> */}
 
             {/* right */}
-            <div
+            {/* <div
                 className='fixed top-0 right-0 h-full w-[100px] bg-transparent '
                 style={{ writingMode: "vertical-lr" }}>
                 <button className='bg-slate-600 text-black px-1    h-[160px] fixed top-[10%] right-0 flex justify-center items-center rounded-l-2xl font-semibold'>
@@ -103,7 +92,7 @@ const Home = () => {
                 <button className='bg-slate-600 text-black shadow-sm shadow-slate-800 px-1    h-[160px] fixed top-[70%] right-0 flex justify-center items-center rounded-l-2xl font-semibold'>
                     Contact
                 </button>
-            </div>
+            </div> */}
         </section>
     );
 };

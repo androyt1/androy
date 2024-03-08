@@ -1,20 +1,14 @@
 "use client";
+import About from "./components/About";
 import Home from "./components/Home";
+import Skills from "./components/Skills";
 
 const page = () => {
     return (
         <>
             <Home />
-            <section id='about' className='min-h-screen w-full  px-10 md:px-[100px] mt-60'>
-                <div>
-                    <h1 className='text-orange-700 font-bold text-6xl uppercase pt-10'>About</h1>
-                </div>
-            </section>
-            <section id='skills' className='min-h-screen w-full  px-10 md:px-[100px] mt-60'>
-                <div>
-                    <h1 className='text-orange-700 font-bold text-6xl uppercase pt-10'>Skills</h1>
-                </div>
-            </section>
+            <About />
+            <Skills />
         </>
     );
 };
