@@ -19,7 +19,7 @@ const Home = () => {
             className='w-full min-h-screen grid grid-cols-1 md:grid-cols-5 px-10 md:px-[100px]'
             id='home'>
             <div className='bg-black md:col-span-2 flex flex-col justify-center items-center md:items-start '>
-                <h3 className='text-2xl md:text-6xl text-slate-300 font-bold mt-12 md:mt-0 text-center md:text-left'>
+                <h3 className='text-2xl md:text-6xl text-slate-300 font-bold mt-6 md:mt-0 text-center md:text-left'>
                     Hi,I am
                 </h3>
                 <h1 className='text-4xl md:text-8xl text-orange-600 font-bold uppercase tracking-tighter text-wrap mt-2 md:mt-4 text-center md:text-left'>
