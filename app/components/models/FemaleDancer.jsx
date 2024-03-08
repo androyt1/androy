@@ -24,7 +24,7 @@ const FemaleDancer = (props) => {
         <mesh>
             <SpotLight
                 ref={spotLightRef}
-                position-y={2}
+                position-y={2.2}
                 distance={12}
                 angle={0.5}
                 attenuation={4}
