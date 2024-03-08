@@ -44,7 +44,7 @@ const Home = () => {
                     <FemaleDancer position-y={-2.3} />
                 </Canvas>
             </div>
-            <div className='bg-black md:col-span-2 flex flex-col justify-center items-center md:items-start md:gap-y-3'>
+            <div className='bg-black md:col-span-2 flex flex-col justify-start md:justify-center items-center md:items-start md:gap-y-3'>
                 <h3 className='text-2xl md:text-6xl text-orange-600 font-semibold uppercase tracking-tighter text-center md:text-left'>
                     <span className='text-2xl md:text-7xl font-semibold text-white'>
                         Fullstack Developer
