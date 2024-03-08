@@ -44,11 +44,11 @@ const Home = () => {
                     <FemaleDancer position-y={-2.3} />
                 </Canvas>
             </div>
-            <div className='bg-black md:col-span-2 flex flex-col justify-center items-start md:gap-y-3'>
-                <h3 className='text-3xl md:text-6xl text-orange-600 font-semibold uppercase tracking-tighter text-center md:text-left'>
-                    Fullstack Developer
+            <div className='bg-black md:col-span-2 flex flex-col justify-center items-center md:items-start md:gap-y-3'>
+                <h3 className='text-2xl md:text-6xl text-orange-600 font-semibold uppercase tracking-tighter text-center md:text-left'>
+                    <span className='text-3xl md:text-7xl  text-white'>Fullstack Developer</span>
                 </h3>
-                <p className='text-sm md:text-xl text-slate-400 font-normal uppercase tracking-tighter text-wrap my-3  text-center md:text-left'>
+                <p className='text-sm md:text-xl text-slate-400 font-normal uppercase   my-3  text-center md:text-left'>
                     Explore my portfolio and witness the convergence of imagination and skill.
                 </p>
             </div>
