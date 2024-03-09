@@ -4,8 +4,9 @@ import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 
 const FemaleDancer = (props) => {
-    const model = useGLTF("/models/female.glb");
+    const model = useGLTF("/models/dance.glb");
     const animations = useAnimations(model.animations, model.scene);
+
     const spotLightRef = useRef();
 
     useFrame((state, _) => {
@@ -17,7 +18,7 @@ const FemaleDancer = (props) => {
     });
 
     useEffect(() => {
-        animations.actions["Female_Dance"].play();
+        animations.actions["Dance"].play();
     }, [animations.actions]);
 
     return (
@@ -25,12 +26,13 @@ const FemaleDancer = (props) => {
             <SpotLight
                 ref={spotLightRef}
                 position-y={1.4}
-                distance={12}
+                distance={4}
                 angle={0.5}
                 attenuation={4}
                 anglePower={10} // Diffuse-cone anglePower (default: 5)
             />
-            <directionalLight position={[0, 4, 0]} intensity={2} />
+            <ambientLight intensity={2} />
+            <directionalLight position={[0, 4, 0]} intensity={5} />
             <primitive object={model.scene} {...props} position-y={-1.5} />
         </mesh>
     );
