@@ -3,9 +3,15 @@
 import React, { useState } from "react";
 import FemaleDancer from "./models/FemaleDancer";
 import { Canvas } from "@react-three/fiber";
+import { Menu, X } from "lucide-react";
 
 const Home = () => {
     const [active, setActive] = useState("home");
+    const [showMenu, setShowMenu] = useState(false);
+
+    const toggleShowMenu = () => {
+        setShowMenu((prev) => !prev);
+    };
 
     const handleScroll = (target) => {
         const item = window.document.getElementById(target);
@@ -16,7 +22,9 @@ const Home = () => {
     };
     return (
         <section
-            className='w-full min-h-screen grid grid-cols-1 md:grid-cols-5 px-10 md:px-[100px] bg-transparent'
+            className={`w-full min-h-screen grid grid-cols-1 md:grid-cols-5  bg-transparent relative transition-transform duration-300 ease-in-out ${
+                showMenu ? "px-10 md:px-[100px]" : "px-3 md:px-5"
+            }`}
             id='home'>
             <div className=' md:col-span-2 flex flex-col justify-center items-center md:items-start '>
                 <h3 className='text-2xl md:text-6xl text-tan font-bold mt-6 md:mt-0 text-center md:text-left'>
@@ -44,7 +52,7 @@ const Home = () => {
                     <FemaleDancer position-y={-2.3} />
                 </Canvas>
             </div>
-            <div className=' md:col-span-2 flex flex-col justify-start md:justify-center items-center md:items-start md:gap-y-3'>
+            <div className=' md:col-span-2 flex flex-col justify-start md:justify-center items-center md:pl-4 md:items-start md:gap-y-3'>
                 <h3 className='text-2xl md:text-6xl text-orange-600 font-semibold uppercase tracking-tighter text-center md:text-left'>
                     <span className='text-2xl md:text-7xl font-semibold text-light'>
                         Fullstack Developer
@@ -56,7 +64,9 @@ const Home = () => {
             </div>
             {/* left */}
             <div
-                className='fixed top-0 left-0 h-full w-[100px] bg-transparent '
+                className={`fixed top-0 left-0 h-full w-[100px] bg-transparent transition-transform duration-300 ease-in-out ${
+                    showMenu ? "translate-x-0" : "translate-x-[-200px]"
+                }`}
                 style={{ writingMode: "vertical-lr" }}>
                 <button
                     className={` text-black px-1    h-[160px] fixed top-[10%] left-0 flex justify-center items-center rounded-r-2xl font-semibold ${
@@ -83,7 +93,9 @@ const Home = () => {
 
             {/* right */}
             <div
-                className='fixed top-0 right-0 h-full w-[100px] bg-transparent '
+                className={`fixed top-0 right-0 h-full w-[100px] bg-transparent transition-transform duration-300 ease-in-out ${
+                    showMenu ? "translate-x-0" : "translate-x-[200px]"
+                }`}
                 style={{ writingMode: "vertical-lr" }}>
                 <button className='bg-secondary text-tan px-1    h-[160px] fixed top-[10%] right-0 flex justify-center items-center rounded-l-2xl font-semibold'>
                     Experience
@@ -94,6 +106,13 @@ const Home = () => {
                 <button className='bg-secondary text-tan shadow-sm shadow-slate-800 px-1    h-[160px] fixed top-[70%] right-0 flex justify-center items-center rounded-l-2xl font-semibold'>
                     Contact
                 </button>
+            </div>
+            <div className='fixed top-2 right-2 z-50 cursor-pointer'>
+                {showMenu ? (
+                    <X size={30} color='#fff' onClick={toggleShowMenu} />
+                ) : (
+                    <Menu size={30} color='#fff' onClick={toggleShowMenu} />
+                )}
             </div>
         </section>
     );
