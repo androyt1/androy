@@ -22,7 +22,7 @@ const Home = () => {
     };
     return (
         <section
-            className={`w-full min-h-screen grid grid-cols-1 md:grid-cols-5  bg-transparent relative transition-transform duration-300 ease-in-out ${
+            className={`w-full min-h-screen grid grid-cols-1 md:grid-cols-6  bg-transparent relative transition-transform duration-300 ease-in-out ${
                 showMenu ? "px-10 md:px-[100px]" : "px-3 md:px-5"
             }`}
             id='home'>
@@ -40,7 +40,7 @@ const Home = () => {
                     Download CV
                 </button> */}
             </div>
-            <div className='max-h-[63vh] md:max-h-full'>
+            <div className='max-h-[50vh] w-full md:max-h-full md:col-span-2'>
                 <Canvas
                     className=' w-full h-full border-t-2 border-white/70 md:border-0'
                     camera={{
