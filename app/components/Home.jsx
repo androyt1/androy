@@ -40,7 +40,7 @@ const Home = () => {
                     Download CV
                 </button> */}
             </div>
-            <div className='h-[50vh] lg:min-h-screen w-full lg:max-h-full lg:w-1/3 bg-[#181312]'>
+            <div className='h-[60vh] lg:min-h-screen w-full lg:max-h-full lg:w-1/3 bg-[#181312]'>
                 <Canvas
                     className=' w-full h-full border-t-2 border-white/70 lg:border-0'
                     camera={{
@@ -52,8 +52,8 @@ const Home = () => {
                     <FemaleDancer position-y={-2.3} />
                 </Canvas>
             </div>
-            <div className='h-[25vh] lg:min-h-screen lg:w-1/3 flex flex-col justify-start lg:justify-center items-center lg:pl-2 lg:items-start lg:gap-y-3 '>
-                <h3 className='text-2xl lg:text-5xl text-textbrown font-bold tracking-tighter md:tracking-wider text-center uppercase lg:text-left'>
+            <div className='h-[15vh] lg:min-h-screen lg:w-1/3 flex flex-col justify-start lg:justify-center items-center lg:pl-2 lg:items-start lg:gap-y-3 '>
+                <h3 className='text-2xl lg:text-5xl text-textbrown font-bold tracking-tighter md:tracking-wider text-center uppercase lg:text-left mt-3 md:mt-0'>
                     Fullstack Developer
                 </h3>
                 <p className='text-sm lg:text-xl text-slate-400 font-normal lg:max-w-[90%]  my-1 lg:my-3  text-center lg:text-left'>
