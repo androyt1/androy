@@ -36,7 +36,7 @@ const Home = () => {
                 <Canvas
                     className=' w-full h-full'
                     camera={{
-                        fov: 30,
+                        fov: 20,
                         far: 1000,
                         near: 0.1,
                         position: [-3, 1, 8],

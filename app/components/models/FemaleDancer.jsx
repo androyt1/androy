@@ -24,14 +24,14 @@ const FemaleDancer = (props) => {
         <mesh>
             <SpotLight
                 ref={spotLightRef}
-                position-y={2.2}
+                position-y={1}
                 distance={12}
                 angle={0.5}
                 attenuation={4}
-                anglePower={5} // Diffuse-cone anglePower (default: 5)
+                anglePower={10} // Diffuse-cone anglePower (default: 5)
             />
             <directionalLight position={[0, 4, 0]} intensity={2} />
-            <primitive object={model.scene} {...props} />
+            <primitive object={model.scene} {...props} position-y={-1.5} />
         </mesh>
     );
 };
