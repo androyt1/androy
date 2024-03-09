@@ -40,7 +40,7 @@ const Home = () => {
                     Download CV
                 </button> */}
             </div>
-            <div className='h-[60vh] lg:min-h-screen w-full lg:max-h-full lg:w-1/3 bg-[#181312]'>
+            <div className='h-[50vh] lg:min-h-screen w-full lg:max-h-full lg:w-1/3 bg-[#181312]'>
                 <Canvas
                     className=' w-full h-full border-t-2 border-white/70 lg:border-0'
                     camera={{
