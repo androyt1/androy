@@ -32,9 +32,9 @@ const Home = () => {
                     Download CV
                 </button> */}
             </div>
-            <div className='max-h-[50vh] md:max-h-full'>
+            <div className='max-h-[63vh] md:max-h-full'>
                 <Canvas
-                    className=' w-full h-full border-t-4 border-white md:border-0'
+                    className=' w-full h-full border-t-2 border-white/70 md:border-0'
                     camera={{
                         fov: 20,
                         far: 1000,
@@ -50,7 +50,7 @@ const Home = () => {
                         Fullstack Developer
                     </span>
                 </h3>
-                <p className='text-sm md:text-xl text-tan font-normal uppercase   my-3  text-center md:text-left'>
+                <p className='text-sm md:text-xl text-tan font-normal uppercase  my-1 md:my-3  text-center md:text-left'>
                     Explore my portfolio and witness the convergence of imagination and skill.
                 </p>
             </div>
