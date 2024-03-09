@@ -34,7 +34,7 @@ const Home = () => {
             </div>
             <div className='max-h-[50vh] md:max-h-full'>
                 <Canvas
-                    className=' w-full h-full'
+                    className=' w-full h-full border-t-4 border-white md:border-0'
                     camera={{
                         fov: 20,
                         far: 1000,
