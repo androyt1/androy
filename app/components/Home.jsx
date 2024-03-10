@@ -42,7 +42,7 @@ const Home = () => {
                 <div className='flex-1'></div>
                 <div className='flex-1 flex flex-col justify-center items-start backdrop-blur-sm'>
                     <h2 className='text-xl md:text-3xl font-normal text-white uppercase'>
-                        Innovative Frontend Developer | Transforming Ideas into Digital Experiences
+                        Transforming Ideas into Digital Experiences
                     </h2>
                     <p className='text-xl text-slate-400 mt-3 md:mt-6'>
                         Crafting Seamless User Journeys with Code and Creativity

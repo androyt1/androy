@@ -17,9 +17,9 @@ const FemaleDancer = (props) => {
         );
     });
 
-    useEffect(() => {
-        animations.actions["Dance"].play();
-    }, [animations.actions]);
+    // useEffect(() => {
+    //     animations.actions["Dance"].play();
+    // }, [animations.actions]);
 
     return (
         <mesh>
@@ -33,7 +33,7 @@ const FemaleDancer = (props) => {
             />
             <ambientLight intensity={2} />
             <directionalLight position={[0, 4, 0]} intensity={5} />
-            <primitive object={model.scene} {...props} position-y={-1.5} />
+            {/* <primitive object={model.scene} {...props} position-y={-1.5} /> */}
         </mesh>
     );
 };
