@@ -26,7 +26,7 @@ const FemaleDancer = (props) => {
             <SpotLight
                 ref={spotLightRef}
                 position-y={1.4}
-                distance={4}
+                distance={7}
                 angle={0.5}
                 attenuation={4}
                 anglePower={10} // Diffuse-cone anglePower (default: 5)

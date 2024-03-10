@@ -8,14 +8,14 @@ import Skills from "./components/Skills";
 
 const page = () => {
     return (
-        <>
+        <div className='flex flex-col w-full min-h-screen'>
             <Home />
             <About />
             <Skills />
             <Experience />
             <Projects />
             <Contact />
-        </>
+        </div>
     );
 };
 
